@@ -1,8 +1,24 @@
-# React + Vite
+# React Redux Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    A sample React frontend page is created for shopping cart using Context API. And product quantity can be increase and decrease for each quantity the price will be change.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Product quantity can be increase and decrease.
+- For each quantity the price will be change.
+- Product can remove from cart.
+
+# Technologies Used
+
+- React: A JavaScript library for building user interfaces
+- Bootstrap: A popular CSS framework for responsive and visually appealing designs
+
+# Getting Started
+
+1. Clone this repository to your local machine.
+2. Run `npm install` to install the required dependencies.
+3. Run `npm run dev` to start the development server and open the app in your browser.
+
+# Deployement
+
+Deployed Link- https://cosmic-queijadas-6d36db.netlify.app/
