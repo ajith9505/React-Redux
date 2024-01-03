@@ -5,6 +5,7 @@ import store from './store';
 function App() {
 
   return (
+    // Redux Provoider
     <Provider store={store}>
       <div className='bg-secondary-subtle'>
       {/* Header */}

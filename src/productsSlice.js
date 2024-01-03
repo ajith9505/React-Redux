@@ -9,17 +9,21 @@ export const productSlice = createSlice({
     initialState,
     reducers: {
 
+        //Increase quantity
         increaseQuantity: (state, action) => {
             const productId = action.payload;
             state.products = state.products.map((product) => product.id === productId ? { ...product, quantity: Math.min(10, product.quantity + 1),
                 total_price: Math.min(10,product.quantity+1)*product.price } : product);
         },
+
+        //Decrease quantity
         decreaseQuantity: (state, action) => {
             const productId = action.payload;
             state.products = state.products.map((product) => product.id === productId ? { ...product, quantity: Math.max(1, product.quantity - 1),
                 total_price: Math.max(1,product.quantity-1)*product.price } : product);
         },
 
+        //Remove product from cart
         removeProduct: (state, action) => {
             const productId = action.payload;
             state.products = state.products.filter((product) => product.id !== productId);
